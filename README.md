@@ -1,0 +1,2 @@
+# DiseasePredictionApp
+Group project 
