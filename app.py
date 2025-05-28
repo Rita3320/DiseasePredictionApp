@@ -44,13 +44,13 @@ with col1:
     if st.session_state.auto_fill:
         age = st.number_input("Age", 0, 120, value=45)
         gender = st.radio("Gender", ["Male", "Female"], index=1)
-        temp = st.slider("Temperature (°C)", 30.0, 45.0, value=38.5)
+        temp = st.slider("Temperature (°C)", -30.0, 45.0, value=36.5)
         humidity = st.slider("Humidity (%)", 10.0, 100.0, value=85.0)
         wind_speed = st.slider("Wind Speed (km/h)", 0.0, 100.0, value=12.0)
     else:
         age = st.number_input("Age", 0, 120, 30)
         gender = st.radio("Gender", ["Male", "Female"])
-        temp = st.slider("Temperature (°C)", 30.0, 45.0, 36.5)
+        temp = st.slider("Temperature (°C)", -30.0, 45.0, 36.5)
         humidity = st.slider("Humidity (%)", 10.0, 100.0, 60.0)
         wind_speed = st.slider("Wind Speed (km/h)", 0.0, 100.0, 5.0)
 
